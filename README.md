@@ -10,11 +10,11 @@ A Model Context Protocol (MCP) server for managing feature flags in [Bucketeer](
 
 This MCP server provides tools for basic CRUD operations on Bucketeer feature flags:
 
-- listFeatureFlags - List all feature flags with filtering and pagination
-- createFeatureFlag - Create a new feature flag
-- getFeatureFlag - Get a specific feature flag by ID
-- updateFeatureFlag - Update an existing feature flag
-- archiveFeatureFlag - Archive a feature flag (make it inactive)
+- `listFeatureFlags` - List all feature flags with filtering and pagination
+- `createFeatureFlag` - Create a new feature flag
+- `getFeatureFlag` - Get a specific feature flag by ID
+- `updateFeatureFlag` - Update an existing feature flag
+- `archiveFeatureFlag` - Archive a feature flag (make it inactive)
 
 ## Prerequisites
 
@@ -150,18 +150,17 @@ Note: This operation archives the flag rather than permanently deleting it. The 
 
 ## Development
 
-```
 
 ### Linting
 
-Run the linter:
+Run the linter
 ```bash
 npm run lint
 ```
 
 ### Building
 
-Build the TypeScript code:
+Build the TypeScript code
 ```bash
 npm run build
 ```
