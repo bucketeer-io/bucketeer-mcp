@@ -2,15 +2,19 @@
 
 A Model Context Protocol (MCP) server for managing feature flags in [Bucketeer](https://bucketeer.io/), an open-source feature flag management platform.
 
+
+> [!WARNING]
+> This is a beta version. Breaking changes may be introduced before general release.
+
 ## Features
 
 This MCP server provides tools for basic CRUD operations on Bucketeer feature flags:
 
-- **listFeatureFlags** - List all feature flags with filtering and pagination
-- **createFeatureFlag** - Create a new feature flag
-- **getFeatureFlag** - Get a specific feature flag by ID
-- **updateFeatureFlag** - Update an existing feature flag
-- **archiveFeatureFlag** - Archive a feature flag (make it inactive)
+- listFeatureFlags - List all feature flags with filtering and pagination
+- createFeatureFlag - Create a new feature flag
+- getFeatureFlag - Get a specific feature flag by ID
+- updateFeatureFlag - Update an existing feature flag
+- archiveFeatureFlag - Archive a feature flag (make it inactive)
 
 ## Prerequisites
 
@@ -20,52 +24,39 @@ This MCP server provides tools for basic CRUD operations on Bucketeer feature fl
 
 ## Installation
 
-1. Clone this repository:
+1. Clone this repository
 ```bash
 git clone https://github.com/yourusername/bucketeer-mcp.git
 cd bucketeer-mcp
 ```
 
-2. Install dependencies:
+2. Install dependencies
 ```bash
 npm install
 ```
 
-3. Build the project:
+3. Build the project
 ```bash
 npm run build
-```
-
-4. Create a `.env` file based on `.env.example`:
-```bash
-cp .env.example .env
-```
-
-5. Configure your environment variables in `.env`:
-```env
-BUCKETEER_HOST=api.bucketeer.io
-BUCKETEER_API_KEY=your-api-key-here
-BUCKETEER_ENVIRONMENT_ID=your-environment-id
-LOG_LEVEL=info
 ```
 
 ## Usage
 
 ### Running the Server
 
-Start the MCP server:
+Start the MCP server
 ```bash
 npm start
 ```
 
-For development with auto-reload:
+For development with auto-reload
 ```bash
 npm run dev
 ```
 
 ### MCP Client Configuration
 
-To use this server with an MCP client, add it to your MCP client configuration:
+To use this server with an MCP client, add it to your MCP client configuration
 
 ```json
 {
@@ -156,40 +147,9 @@ Parameters:
 
 Note: This operation archives the flag rather than permanently deleting it. The flag can be unarchived later if needed.
 
-## API Key Permissions
-
-Different operations require different permission levels:
-- **READ**: Required for listFeatureFlags and getFeatureFlag
-- **WRITE**: Required for createFeatureFlag, updateFeatureFlag, and archiveFeatureFlag
 
 ## Development
 
-### Project Structure
-
-```
-bucketeer-mcp/
-├── src/
-│   ├── api/
-│   │   └── client.ts       # Bucketeer API client
-│   ├── tools/
-│   │   ├── list-flags.ts   # List feature flags tool
-│   │   ├── create-flag.ts  # Create feature flag tool
-│   │   ├── get-flag.ts     # Get feature flag tool
-│   │   ├── update-flag.ts  # Update feature flag tool
-│   │   ├── archive-flag.ts # Archive feature flag tool
-│   │   └── index.ts        # Tool exports
-│   ├── types/
-│   │   └── bucketeer.ts    # TypeScript type definitions
-│   ├── utils/
-│   │   └── logger.ts       # Logging utility
-│   ├── config.ts           # Configuration management
-│   ├── server.ts           # MCP server implementation
-│   └── index.ts            # Entry point
-├── .env.example            # Environment variables template
-├── .gitignore
-├── package.json
-├── tsconfig.json
-└── README.md
 ```
 
 ### Linting
@@ -206,26 +166,12 @@ Build the TypeScript code:
 npm run build
 ```
 
-## Troubleshooting
+## Contributing
 
-### Common Issues
+We would ❤️ for you to contribute to Bucketeer and help improve it! Anyone can use and enjoy it!
 
-1. **Authentication errors**: Ensure your API key is valid and has the necessary permissions
-2. **Environment ID not found**: Verify the environment ID exists in your Bucketeer instance
-3. **Connection errors**: Check that the BUCKETEER_HOST is correct and accessible
-
-### Logging
-
-The server logs to stderr in JSON format. Adjust the log level using the `LOG_LEVEL` environment variable:
-- `error` - Only errors
-- `warn` - Warnings and errors
-- `info` - General information (default)
-- `debug` - Detailed debug information
+Please follow our contribution guide [here](https://docs.bucketeer.io/contribution-guide/).
 
 ## License
 
-MIT
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
+Apache License 2.0, see [LICENSE](https://github.com/bucketeer-io/openfeature-go-server-sdk/blob/main/LICENSE).
