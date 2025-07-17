@@ -20,27 +20,28 @@ jobs:
         with:
           token: ${{ secrets.WORKFLOW_TOKEN }} # We need to set the PAT so the update changelog docs page workflow can be triggerede PAT so the update changelog docs page workflow can be triggered
 
-  publish:
-    needs: [release_please]
-    if: ${{ needs.release_please.outputs.release_created }}
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      id-token: write
-    steps:
-      - name: Checkout
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
-      - name: Setup Node.js
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
-        with:
-          node-version: '24.x'
-          registry-url: 'https://registry.npmjs.org'
-          scope: '@bucketeer'
-      - name: Install dependencies
-        run: npm ci
-      - name: Build
-        run: npm run build
-      - name: Publish
-        run: npm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+  # Add this back in when we set a package to publish
+  # publish:
+  #   needs: [release_please]
+  #   if: ${{ needs.release_please.outputs.release_created }}
+  #   runs-on: ubuntu-latest
+  #   permissions:
+  #     contents: read
+  #     id-token: write
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+  #     - name: Setup Node.js
+  #       uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+  #       with:
+  #         node-version: '24.x'
+  #         registry-url: 'https://registry.npmjs.org'
+  #         scope: '@bucketeer'
+  #     - name: Install dependencies
+  #       run: npm ci
+  #     - name: Build
+  #       run: npm run build
+  #     - name: Publish
+  #       run: npm publish --provenance --access public
+  #       env:
+  #         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
