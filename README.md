@@ -24,9 +24,19 @@ This MCP server provides tools for basic CRUD operations on Bucketeer feature fl
 
 ## Installation
 
+### Using npx (Recommended)
+
+The easiest way to use Bucketeer MCP Server is directly with `npx` - no installation required:
+
+```bash
+npx @bucketeer/mcp
+```
+
+### Local Installation
+
 1. Clone this repository
 ```bash
-git clone https://github.com/yourusername/bucketeer-mcp.git
+git clone https://github.com/bucketeer-io/bucketeer-mcp.git
 cd bucketeer-mcp
 ```
 
@@ -44,6 +54,14 @@ npm run build
 
 ### Running the Server
 
+#### Using npx (No Installation Required)
+
+```bash
+npx @bucketeer/mcp
+```
+
+#### Using Local Installation
+
 Start the MCP server
 ```bash
 npm start
@@ -56,7 +74,27 @@ npm run dev
 
 ### MCP Client Configuration
 
-To use this server with an MCP client, add it to your MCP client configuration
+To use this server with an MCP client, add it to your MCP client configuration.
+
+#### Using npx (Recommended)
+
+```json
+{
+  "mcpServers": {
+    "bucketeer": {
+      "command": "npx",
+      "args": ["@bucketeer/mcp"],
+      "env": {
+        "BUCKETEER_HOST": "api.bucketeer.io",
+        "BUCKETEER_API_KEY": "your-api-key",
+        "BUCKETEER_ENVIRONMENT_ID": "your-environment-id"
+      }
+    }
+  }
+}
+```
+
+#### Using Local Installation
 
 ```json
 {
