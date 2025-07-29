@@ -27,7 +27,7 @@ function loadConfig(): Config {
 	} catch (error) {
 		if (error instanceof z.ZodError) {
 			console.error("Configuration validation error:");
-			error.errors.forEach((err) => {
+			error.issues.forEach((err) => {
 				console.error(`  - ${err.path.join(".")}: ${err.message}`);
 			});
 			console.error("\nPlease check your environment variables or .env file.");
