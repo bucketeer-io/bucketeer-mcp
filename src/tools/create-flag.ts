@@ -182,7 +182,7 @@ export const createFlagTool = {
 								{
 									success: false,
 									error: "Invalid input parameters",
-									details: error.errors,
+									details: error.issues,
 								},
 								null,
 								2,
