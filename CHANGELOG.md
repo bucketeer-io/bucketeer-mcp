@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/bucketeer-io/bucketeer-mcp/compare/v1.0.1...v1.0.2) (2025-07-29)
+
+
+### Bug Fixes
+
+* zod error ([#25](https://github.com/bucketeer-io/bucketeer-mcp/issues/25)) ([ddd2d75](https://github.com/bucketeer-io/bucketeer-mcp/commit/ddd2d75f9e0a866e8186a7f319e5d52b8fb5808f))
+
 ## [1.0.1](https://github.com/bucketeer-io/bucketeer-mcp/compare/v1.0.0...v1.0.1) (2025-07-29)
 
 
