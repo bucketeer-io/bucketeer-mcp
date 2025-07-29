@@ -1,6 +1,6 @@
 {
 	"name": "@bucketeer/mcp",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "MCP server for Bucketeer feature flags management",
 	"main": "dist/index.js",
 	"type": "module",
@@ -12,7 +12,7 @@
 		"dist/",
 		"README.md",
 		"LICENSE"
-	],	
+	],
 	"scripts": {
 		"build": "tsc",
 		"start": "node dist/index.js",
@@ -53,9 +53,9 @@
 		"type": "git",
 		"url": "git+https://github.com/bucketeer-io/bucketeer-mcp.git"
 	},
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org",
-    "access": "public",
-    "@bucketeer:registry": "https://registry.npmjs.org"
-  }
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org",
+		"access": "public",
+		"@bucketeer:registry": "https://registry.npmjs.org"
+	}
 }
