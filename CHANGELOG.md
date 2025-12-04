@@ -1,5 +1,34 @@
 # Changelog
 
+## [1.0.3](https://github.com/bucketeer-io/bucketeer-mcp/compare/v1.0.2...v1.0.3) (2025-12-04)
+
+
+### Miscellaneous
+
+* **deps:** bump body-parser from 2.2.0 to 2.2.1 ([#51](https://github.com/bucketeer-io/bucketeer-mcp/issues/51)) ([b9c4074](https://github.com/bucketeer-io/bucketeer-mcp/commit/b9c407453d74ace41160e12d9da8c82cea344f0b))
+* **deps:** update actions/checkout action to v4.3.0 ([#33](https://github.com/bucketeer-io/bucketeer-mcp/issues/33)) ([9f74661](https://github.com/bucketeer-io/bucketeer-mcp/commit/9f74661d436312e7c94c575e3ee1f7b8886dc64e))
+* **deps:** update actions/checkout action to v5 ([#34](https://github.com/bucketeer-io/bucketeer-mcp/issues/34)) ([8e02c26](https://github.com/bucketeer-io/bucketeer-mcp/commit/8e02c263c8d61113b45391f8141f19dd66ef01c6))
+* **deps:** update actions/checkout action to v5.0.1 ([#44](https://github.com/bucketeer-io/bucketeer-mcp/issues/44)) ([609966d](https://github.com/bucketeer-io/bucketeer-mcp/commit/609966dd52a7b62b57486d8575fdd5ef4585336b))
+* **deps:** update actions/checkout action to v6 ([#46](https://github.com/bucketeer-io/bucketeer-mcp/issues/46)) ([63ac512](https://github.com/bucketeer-io/bucketeer-mcp/commit/63ac512b9cc903467ad6040a1251806acddd50c6))
+* **deps:** update actions/setup-node action to v6 ([#42](https://github.com/bucketeer-io/bucketeer-mcp/issues/42)) ([fa57316](https://github.com/bucketeer-io/bucketeer-mcp/commit/fa573161f9fe62a3454934ece8d78530f49c786f))
+* **deps:** update amannn/action-semantic-pull-request action to v6 ([#36](https://github.com/bucketeer-io/bucketeer-mcp/issues/36)) ([1b5bc4f](https://github.com/bucketeer-io/bucketeer-mcp/commit/1b5bc4f04bcfd5254bd386117ef6bc6c0e29c4ac))
+* **deps:** update dependency @biomejs/biome to v2.3.5 ([#29](https://github.com/bucketeer-io/bucketeer-mcp/issues/29)) ([73fb7e6](https://github.com/bucketeer-io/bucketeer-mcp/commit/73fb7e61b229d459cb2323d08b5b906cd80f2475))
+* **deps:** update dependency @biomejs/biome to v2.3.8 ([#45](https://github.com/bucketeer-io/bucketeer-mcp/issues/45)) ([ff741e9](https://github.com/bucketeer-io/bucketeer-mcp/commit/ff741e9685e909817ce7b899ca5aa34fafdb4b6c))
+* **deps:** update dependency @modelcontextprotocol/sdk to v1.22.0 ([#31](https://github.com/bucketeer-io/bucketeer-mcp/issues/31)) ([a894210](https://github.com/bucketeer-io/bucketeer-mcp/commit/a8942109941c7ffd4faed2f69957ff8e2e95ca13))
+* **deps:** update dependency @modelcontextprotocol/sdk to v1.24.0 [security] ([#50](https://github.com/bucketeer-io/bucketeer-mcp/issues/50)) ([364cb12](https://github.com/bucketeer-io/bucketeer-mcp/commit/364cb12bf81f5ddf8ddfa84ebfb175881c37b073))
+* **deps:** update dependency @modelcontextprotocol/sdk to v1.24.2 ([#48](https://github.com/bucketeer-io/bucketeer-mcp/issues/48)) ([60d3636](https://github.com/bucketeer-io/bucketeer-mcp/commit/60d36363ea5de00b4112bf10dbf42847010ef978))
+* **deps:** update dependency @types/node to v22.19.1 ([#30](https://github.com/bucketeer-io/bucketeer-mcp/issues/30)) ([d520c41](https://github.com/bucketeer-io/bucketeer-mcp/commit/d520c41b84bbdd6cd724faf1f95d37a026d695b4))
+* **deps:** update dependency axios to v1.12.0 [security] ([#38](https://github.com/bucketeer-io/bucketeer-mcp/issues/38)) ([07a8628](https://github.com/bucketeer-io/bucketeer-mcp/commit/07a862826eb714d10226b010e8ad47c306d567d1))
+* **deps:** update dependency axios to v1.13.2 ([#41](https://github.com/bucketeer-io/bucketeer-mcp/issues/41)) ([1a17347](https://github.com/bucketeer-io/bucketeer-mcp/commit/1a17347b721a15f84b705187744d3472138ac930))
+* **deps:** update dependency dotenv to v17.2.3 ([#40](https://github.com/bucketeer-io/bucketeer-mcp/issues/40)) ([f608303](https://github.com/bucketeer-io/bucketeer-mcp/commit/f6083036ea175b3d9adadf92709370d3a9e700cd))
+* **deps:** update dependency node to v24 ([#43](https://github.com/bucketeer-io/bucketeer-mcp/issues/43)) ([83bef04](https://github.com/bucketeer-io/bucketeer-mcp/commit/83bef0473d85d117a3b88ac6ac4a8748f9164964))
+* **deps:** update dependency tsx to v4.20.6 ([#35](https://github.com/bucketeer-io/bucketeer-mcp/issues/35)) ([068145e](https://github.com/bucketeer-io/bucketeer-mcp/commit/068145e03971c4d5d9dc5eb921c2ee01f0f1e05e))
+* **deps:** update dependency tsx to v4.21.0 ([#49](https://github.com/bucketeer-io/bucketeer-mcp/issues/49)) ([0176aeb](https://github.com/bucketeer-io/bucketeer-mcp/commit/0176aeb0b4f43a21eb4bca3aedbf528a33c53a7d))
+* **deps:** update dependency typescript to v5.9.3 ([#32](https://github.com/bucketeer-io/bucketeer-mcp/issues/32)) ([6310566](https://github.com/bucketeer-io/bucketeer-mcp/commit/631056614bd55c96863842c1f9d108982a999fe0))
+* **deps:** update dependency zod to v4.1.12 ([#28](https://github.com/bucketeer-io/bucketeer-mcp/issues/28)) ([61135fb](https://github.com/bucketeer-io/bucketeer-mcp/commit/61135fb410daf26cc4f51d663a7a5338c3bf0665))
+* **deps:** update dependency zod to v4.1.13 ([#47](https://github.com/bucketeer-io/bucketeer-mcp/issues/47)) ([9f78e0f](https://github.com/bucketeer-io/bucketeer-mcp/commit/9f78e0f968454411f9b67954f8ab0047ea1dad10))
+* **deps:** update googleapis/release-please-action action to v4.4.0 ([#37](https://github.com/bucketeer-io/bucketeer-mcp/issues/37)) ([e8705ee](https://github.com/bucketeer-io/bucketeer-mcp/commit/e8705ee00f6e36b35a1f1b1572244252bc5301f1))
+
 ## [1.0.2](https://github.com/bucketeer-io/bucketeer-mcp/compare/v1.0.1...v1.0.2) (2025-07-29)
 
 
