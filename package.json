@@ -1,6 +1,6 @@
 {
 	"name": "@bucketeer/mcp",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "MCP server for Bucketeer feature flags management",
 	"main": "dist/index.js",
 	"type": "module",
