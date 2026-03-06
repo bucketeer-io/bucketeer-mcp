@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.0.4](https://github.com/bucketeer-io/bucketeer-mcp/compare/v1.0.3...v1.0.4) (2026-03-06)
+
+
+### Miscellaneous
+
+* **deps:** bump ajv from 8.17.1 to 8.18.0 ([#72](https://github.com/bucketeer-io/bucketeer-mcp/issues/72)) ([9a4da65](https://github.com/bucketeer-io/bucketeer-mcp/commit/9a4da65fef31ce26a504755af1f77684c1bdd743))
+* **deps:** bump hono from 4.11.9 to 4.12.3 ([#74](https://github.com/bucketeer-io/bucketeer-mcp/issues/74)) ([4c243f8](https://github.com/bucketeer-io/bucketeer-mcp/commit/4c243f8de133dfb7c3b493a75d11cee762dba2f3))
+* **deps:** bump qs from 6.14.1 to 6.15.0 ([#73](https://github.com/bucketeer-io/bucketeer-mcp/issues/73)) ([3cb80da](https://github.com/bucketeer-io/bucketeer-mcp/commit/3cb80dabcaba6378352a22316654cb7971166bb3))
+* **deps:** update dependency @biomejs/biome to v2.4.5 ([#77](https://github.com/bucketeer-io/bucketeer-mcp/issues/77)) ([de0e38a](https://github.com/bucketeer-io/bucketeer-mcp/commit/de0e38a37a2afdb62a26195f4c1aa5753984d65f))
+* **deps:** update dependency @biomejs/biome to v2.4.6 ([#79](https://github.com/bucketeer-io/bucketeer-mcp/issues/79)) ([6882a1c](https://github.com/bucketeer-io/bucketeer-mcp/commit/6882a1cd98562077679979f25a330ee6b309dd07))
+* **deps:** update dependency @types/node to v24.11.2 ([#80](https://github.com/bucketeer-io/bucketeer-mcp/issues/80)) ([c97c9ea](https://github.com/bucketeer-io/bucketeer-mcp/commit/c97c9ea93ffa52df3408b8124a07d413324d9c6f))
+
 ## [1.0.3](https://github.com/bucketeer-io/bucketeer-mcp/compare/v1.0.2...v1.0.3) (2026-03-02)
 
 
