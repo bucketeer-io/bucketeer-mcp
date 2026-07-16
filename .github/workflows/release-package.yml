@@ -15,10 +15,17 @@ jobs:
     outputs:
       release_created: ${{ steps.release.outputs.release_created }}
     steps:
+      - uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
+        id: app-token
+        with:
+          client-id: ${{ secrets.RELEASE_BOT_APP_ID }}
+          private-key: ${{ secrets.RELEASE_BOT_PRIVATE_KEY }}
+          permission-contents: write
+          permission-pull-requests: write
       - uses: googleapis/release-please-action@5c625bfb5d1ff62eadeeb3772007f7f66fdcf071 # v4.4.1
         id: release
         with:
-          token: ${{ secrets.WORKFLOW_TOKEN }} # We need to set the PAT so the update changelog docs page workflow can be triggerede PAT so the update changelog docs page workflow can be triggered
+          token: ${{ steps.app-token.outputs.token }} # App token so the tag/release created by release-please can trigger other workflows
 
   publish:
     needs: [release_please]
