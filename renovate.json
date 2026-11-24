@@ -7,6 +7,11 @@
     {
       "matchUpdateTypes": ["patch"],
       "automerge": true
+    },
+    {
+      "description": "Axios release notes include an advisory proof of concept that secret scanning flags.",
+      "matchPackageNames": ["axios"],
+      "fetchReleaseNotes": false
     }
   ]
 }
